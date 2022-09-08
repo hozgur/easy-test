@@ -1,0 +1,21 @@
+{
+  "name": "easy-test",
+  "version": "1.0.0",
+  "description": "Easy Unit Tester",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Hakan OZGUR",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hozgur/easy-test.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hozgur/easy-test/issues"
+  },
+  "homepage": "https://github.com/hozgur/easy-test#readme"
+}
