@@ -70,6 +70,15 @@ const compareObjects = (a, b) => {
     }
   }
 
+export function time(test_closure, callback) {
+    console.log(`Testing: ${test_closure.toString()}`);    
+    let start = process.hrtime()
+    let result = callback();
+    let time = process.hrtime(start)    
+    console.log(`Time: ${time}ns`);
+    return result;
+  }
+
 export function result(title,nextTitle) {
   console.log('-----------------------------------------------------------------------------------------')
   console.log(`Test:${title} : ${White}${total_tests} tests, ${total_errors} errors${Reset}`);

@@ -1,4 +1,4 @@
-import {result,expect} from './index.js';  // import from index.js
+import {result,expect,time} from './index.js';  // import from index.js
 
 console.log("Test1 Starting.");
 
@@ -7,4 +7,5 @@ function sum(a,b) {
 }
 
 expect("sum test", sum(1,2), 3);
+time("sum time", () => sum(1,2));
 result("Test1");
